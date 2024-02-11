@@ -15,12 +15,46 @@ body {
   justify-content: center;
 }
 
+.header{
+  font-size: larger;
+  font-weight: bold;
+}
+
 .modal {
+  flex: 0 0 auto;
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  padding: 12px;
+  gap: 12px;
 }
+
+.outercontainerleft{
+  margin-right: 12px;
+}
+
+.toprow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.text{
+  margin-bottom: 12px;
+}
+
+/*
+.bottomrow{
+  margin-top: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  align-items: center;
+}
+*/
 
 .icon {
   color: royalblue;
