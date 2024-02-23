@@ -5,7 +5,71 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  
+
+  /*Body geht von oben nach unter
+  Header oben und Footer unten
+  Logo in der Mitte*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /*
+  padding: 10px;
+  
+  
+  
+  align-items: center;
+  */
 }
+
+.header, .footer{
+  padding: 12px;
+  
+  /*Links bleiben links und rechts "kleben"*/
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer{
+  background-color: #e2e1e1;
+}
+
+
+ul{
+  /*Liste ist Horizontal- ohne dots
+  - abstandt zwischen den elementen*/
+  list-style-type: none;
+  padding:0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  /*justify-content: space-between;*/
+}
+
+/*Hyperlinks haben ne normale farbe*/
+a:hover, a:visited, a:link, a:active{
+  color: black;
+  text-decoration: none;
+}
+
+
+/*Logo ist in der Mitte*/
+.content{
+  align-self: center;
+}
+
+/*Suchleiste und Buttons mittig und richtig formatiert*/
+.buttons, .input{
+  display: flex;
+  justify-content: center;
+}
+
+.buttons{
+  gap:12px;
+}
+
+
 
 img {
   width: 600px;
@@ -25,3 +89,10 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+/*
+
+
+
+
+*/
